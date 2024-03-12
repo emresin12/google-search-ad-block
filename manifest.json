@@ -1,0 +1,13 @@
+{
+    "name": "My Simple Extension", 
+    "manifest_version": 3,
+    "version": "1.0",
+    "description": "A helpful extension for customizing your browsing",
+    "content_scripts": [
+      {
+        "matches": ["https://www.google.com/*"], 
+        "js": ["content_script.js"],
+        "run_at": "document_start" 
+      }
+    ]
+}
